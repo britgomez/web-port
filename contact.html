@@ -11,10 +11,6 @@
 
 
     <style>
-        @font-face {
-            font-family: myFirstFont;
-            src: url(sansation_light.woff);
-        }
 
         .gallery {
             background: f00;
@@ -45,61 +41,7 @@
 
         }
 
-        .btn {
-            display: inline-block;
-            background: #f00;
-            padding: 10px;
-            border-radius: 10px;
-            color: #fff;
-            text-decoration: none;
-        }
-
-        .btn:hover {
-            animation: 2s btn ease-in-out infinite;
-            background: #000;
-        }
-
-        @keyframes btn {
-            0% {
-                opacity: 0;
-                background: #f00;
-                transform: scale(1, 1);
-            }
-
-            50% {
-                opacity: 0.5;
-                background: #000;
-                transform: scale(1.5, 1.5);
-            }
-
-            100% {
-                opacity: 1;
-                background: #f00;
-                transform: scale(1, 1);
-            }
-
-        }
-
-        #hello {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-
-        #hellocontent {
-            animation: 5s faded-in linear 1;
-            padding: 20px;
-        }
+    
 
         #chat {
             background-color: #22212c;
@@ -119,16 +61,11 @@
         }
 
         input[type=submit] {
-            background-color: #04AA6D;
             color: white;
             padding: 12px 20px;
             border: none;
             border-radius: 4px;
             cursor: pointer;
-        }
-
-        input[type=submit]:hover {
-            background-color: #45a049;
         }
 
         #contactForm {
@@ -144,9 +81,9 @@
     <div class="nav" id="nav">
 
         <ul class="topnav">
-            <li><a class="active" href="contact.html">Contact</a></li>
-            <li><a href="work.html">Work</a></li>
             <li><a href="index.html">Home</a></li>
+            <li><a href="work.html">Work</a></li>
+             <li><a class="active" href="contact.html">Contact</a></li>
         </ul>
     </div>
 
