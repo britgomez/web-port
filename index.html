@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Britney Gomez</title>
+    <meta name="viewport" content="width+device-width, initial-scale=1.0">
+
+    <link href="style.css" rel="stylesheet">
+
+    <style>
+        @font-face {
+            font-family: myFirstFont;
+            src: url(sansation_light.woff);
+        }
+
+        .btn {
+            display: inline-block;
+            background: #f00;
+            padding: 10px;
+            border-radius: 10px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            animation: 2s btn ease-in-out infinite;
+            background: #000;
+        }
+
+        @keyframes btn {
+            0% {
+                opacity: 0;
+                background: #f00;
+                transform: scale(1, 1);
+            }
+
+            50% {
+                opacity: 0.5;
+                background: #000;
+                transform: scale(1.5, 1.5);
+            }
+
+            100% {
+                opacity: 1;
+                background: #f00;
+                transform: scale(1, 1);
+            }
+
+        }
+
+        .landing {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @keyframes fadeIn{
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+         .fadeIn {
+            -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    </style>
+</head>
+
+
+
+<body>
+    <div class="logo">
+        <a href="index.html"><img src="imgs/logo.svg" alt="logo"></a>
+    </div>
+
+    <div class="nav" id="nav">
+
+        <ul class="topnav">
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a class="active" href="index.html">Home</a></li>
+
+        </ul>
+    </div>
+
+<div id="landing">
+           <div class="container">
+        <div class="c100">
+            <img src="imgs/title.svg">
+        </div>
+    </div>
+    </div>
+
+
+
+
+</body></html>

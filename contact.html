@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Britney Gomez</title>
+    <meta name="viewport" content="width+device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <style>
+        @font-face {
+            font-family: myFirstFont;
+            src: url(sansation_light.woff);
+        }
+
+        .gallery {
+            background: f00;
+            padding: 30px 50 px;
+        }
+
+        @media screen and (max-width:600px) {
+
+            .c33,
+            .c50 {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width:375px) {
+            .gallery {
+                background: #000;
+            }
+
+            .gallery h2 {
+                font-size: 40px;
+            }
+
+            .gallery p {
+                color: #000;
+                font-size: 20px;
+            }
+
+        }
+
+        .btn {
+            display: inline-block;
+            background: #f00;
+            padding: 10px;
+            border-radius: 10px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            animation: 2s btn ease-in-out infinite;
+            background: #000;
+        }
+
+        @keyframes btn {
+            0% {
+                opacity: 0;
+                background: #f00;
+                transform: scale(1, 1);
+            }
+
+            50% {
+                opacity: 0.5;
+                background: #000;
+                transform: scale(1.5, 1.5);
+            }
+
+            100% {
+                opacity: 1;
+                background: #f00;
+                transform: scale(1, 1);
+            }
+
+        }
+
+        #hello {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        #hellocontent {
+            animation: 5s faded-in linear 1;
+            padding: 20px;
+        }
+
+        #chat {
+            background-color: #22212c;
+        }
+
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        #contactForm {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo">
+        <a href="index.html"><img src="imgs/logo.svg" alt="logo"></a>
+    </div>
+    <div class="nav" id="nav">
+
+        <ul class="topnav">
+            <li><a class="active" href="contact.html">Contact</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </div>
+
+
+    <div id="chat">
+        <div class="container gallery">
+            <div class="c100">
+                <h2>Let's Chat</h2>
+            </div>
+
+            <div class="c100">
+                <form action="/action_page.php">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                    <label for="E-mail">E-mail</label>
+                    <input type="text" id="email" name="email" placeholder="Your e-mail..">
+
+
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                    <input type="submit" style="background-color:#f24e4e" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body></html>
