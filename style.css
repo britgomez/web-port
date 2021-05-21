@@ -5,9 +5,8 @@
 
 
  .logo {
-     padding-left: 10px;
+     margin:0 auto;
      width: 200px;
-     position: center center;
  }
 
 
@@ -64,10 +63,11 @@
      overflow: hidden;
      background-color: clear;
      border-color: #f24e4e;
+     text-align:center;
  }
 
  ul.topnav li {
-     float: right;
+     display: inline-block;
  }
 
  ul.topnav li a {
